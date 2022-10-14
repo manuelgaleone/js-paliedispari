@@ -57,21 +57,21 @@ function sommaNumeri(num) {
 
 
 //Dichiaro la variabile che contiene il vincitore
-let pariDispariWinner = pariDispariValid();
+let pariDispariWinner = pariDispariValid(sommaUtentePc);
 
 //Creo la funzione di validazione
-function pariDispariValid(sommaUtentePc) {
+function pariDispariValid(numero) {
     
     //Dichiaro la varibile che contiene il risultato
     let pariDispari = "";
         
     //Verifico che sia o pari o dispari
-    if (sommaUtentePc % 2) {
+    if (numero % 2) {
 
         console.log("La somma è dispari!");
         pariDispari = "dispari";
 
-    } else if (sommaUtentePc % 2) {
+    } else {
 
         console.log("La somma è pari!");
         pariDispari = "pari";
@@ -94,3 +94,6 @@ if (pariDispariWinner === pariDispariUtente) {
     alert("Ha vinto il Pc!");
 
 };
+
+
+console.log( Boolean(0) );

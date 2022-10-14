@@ -44,7 +44,18 @@ while (pariDispariUtente !== "pari" && pariDispariUtente !== "dispari") {
 };
 
 
-//
+//Calcolo la Somma
+let sommaUtentePc = sommaNumeri();
+console.log("La somma tra i due è: " + sommaUtentePc);
+
+function sommaNumeri(num) {
+
+    let somma = numeroPerPc + numeroUtente;
+    return somma;
+};
+
+
+//Definisco se è Pari o Dispari
 
 
 

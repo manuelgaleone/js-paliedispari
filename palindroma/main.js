@@ -1,6 +1,8 @@
 //Chiedo all'Utente una Parola
 //Creo la funzione per capire se è Palindroma o meno
 
+//Se la parola è palindroma, anche sottraendo una lettera dovrebbe essere simile
+
 //Inserisco la Parola
 let wordUser = prompt("Dimmi una Parola: ");
 let wordReverse = reverseWordFunc(wordUser);
@@ -19,6 +21,8 @@ function reverseWordFunc(word) {
 
 }
 
+// Chiaramente se sono uguali invertendole, è palindroma
+
 //Condizione 
 if (wordUser === wordReverse) {
     
@@ -29,3 +33,4 @@ if (wordUser === wordReverse) {
     alert("La tua non è una Parola Palindroma.");
 
 }
+

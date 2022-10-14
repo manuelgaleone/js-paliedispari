@@ -56,7 +56,18 @@ function sommaNumeri(num) {
 
 
 //Definisco se è Pari o Dispari
+if (sommaUtentePc % 2 == 0 && pariDispariUtente === pari) {
 
+    alert("La somma è pari, ha vinto l'utente!");
+
+} else if ((sommaUtentePc % 2 && pariDispariUtente === dispari)) {
+
+    alert("La somma è dispari, ha vinto l'utente!")
+
+};
+
+/* Se l'utente ha scelto pari e la vittoria è pari allora l'utente ha vinto,
+altrimenti se la somma è dispari e l'utente ha scelto pari, ha vinto il pc. */ 
 
 
 

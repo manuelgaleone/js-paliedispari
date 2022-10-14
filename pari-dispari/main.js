@@ -57,7 +57,7 @@ function sommaNumeri(num) {
 
 
 //Dichiaro la variabile che contiene il vincitore
-let pariDispariWinner = pariDispari;
+let pariDispariWinner = pariDispariValid();
 
 //Creo la funzione di validazione
 function pariDispariValid(sommaUtentePc) {
@@ -69,7 +69,7 @@ function pariDispariValid(sommaUtentePc) {
     if (sommaUtentePc % 2) {
 
         console.log("La somma è dispari!");
-        pariDispari = "pispari";
+        pariDispari = "dispari";
 
     } else if (sommaUtentePc % 2) {
 

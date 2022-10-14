@@ -45,51 +45,52 @@ while (pariDispariUtente !== "pari" && pariDispariUtente !== "dispari") {
 
 
 //Calcolo la Somma
-let sommaUtentePc = sommaNumeri();
+let sommaUtentePc = numeroUtente + numeroPerPc; /* sommaNumeri();
 console.log("La somma tra i due è: " + sommaUtentePc);
 
+//Creo la funzione di somma
 function sommaNumeri(num) {
 
     let somma = numeroPerPc + numeroUtente;
     return somma;
-};
+}; */
 
 
-//Definisco se è Pari o Dispari
-if (sommaUtentePc % 2 == 0 && pariDispariUtente === pari) {
+//Dichiaro la variabile che contiene il vincitore
+let pariDispariWinner = pariDispari;
 
-    alert("La somma è pari, ha vinto l'utente!");
+//Creo la funzione di validazione
+function pariDispariValid(sommaUtentePc) {
+    
+    //Dichiaro la varibile che contiene il risultato
+    let pariDispari = "";
+        
+    //Verifico che sia o pari o dispari
+    if (sommaUtentePc % 2) {
 
-} else if ((sommaUtentePc % 2 && pariDispariUtente === dispari)) {
+        console.log("La somma è dispari!");
+        pariDispari = "pispari";
 
-    alert("La somma è dispari, ha vinto l'utente!")
+    } else if (sommaUtentePc % 2) {
 
-};
+        console.log("La somma è pari!");
+        pariDispari = "pari";
 
-/* Se l'utente ha scelto pari e la vittoria è pari allora l'utente ha vinto,
-altrimenti se la somma è dispari e l'utente ha scelto pari, ha vinto il pc. */ 
+    }
+
+    //Stampo il risultato
+        return pariDispari;
+
+}
 
 
+//Comunico il risultato
+if (pariDispariWinner === pariDispariUtente) {
 
-/*
-
-//Sommo i Numeri 
-function sommaNumeri(numeroUtente, numeroDelPc) {
-
-    let somma = numeroUtente + numeroDelPc;
-    return somma;
-
-};
-
-//Vedo se la somma è pari o dispari
-if (somma % 2 == 0) {
-
-    alert("La somma è Pari, ha vinto il pari!");
+    alert("Ha vinto l'Utente!");
 
 } else {
 
-    alert("La somma è dispari, ha vinto il dispari!");
+    alert("Ha vinto il Pc!");
 
 };
-
-*/

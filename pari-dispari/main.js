@@ -8,15 +8,8 @@ L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 
 */
 
-//L'utente sceglie un Numero e Pari o Dispari
-let numeroUtente = Number(prompt("Scegli un numero da 1 a 5: "));
-let pariDispariUtente = prompt("Scegli se pari o dispari");
-
 //Scelgo il Numero del Pc
 let numeroPerPc = numeroPc;
-
-//Dichiaro la Somma
-let sommaVincitrice = "";
 
 //Genero il Numero per il Pc
 function numeroPc(min, max) {
@@ -25,7 +18,27 @@ function numeroPc(min, max) {
 
 };
 
-//
+
+//L'utente sceglie un Numero e Pari o Dispari
+let numeroUtente = Number(prompt("Scegli un numero da 1 a 5: "));
+let pariDispariUtente = prompt("Scegli se pari o dispari: ");
+
+//Nel caso in cui l'utente fosse un simpaticone
+while (numeroUtente < 1 || numeroUtente > 5 || isNaN(numeroUtente)) {
+
+    alert("Il numero dev'essere da 1 a 5!");
+    numeroUtente = parseInt(prompt("Scegli un numero da 1 a 5: "));
+
+};
+
+while (pariDispariUtente !== "pari" && pariDispariUtente !== "dispari") {
+
+    alert("Devi scegliere tra pari o dispari!");
+    pariDispariUtente = prompt('Scegli se pari o dispari: ');
+
+};
+
+
 
 
 
